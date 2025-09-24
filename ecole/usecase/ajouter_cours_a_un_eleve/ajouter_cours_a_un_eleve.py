@@ -12,5 +12,5 @@ class AjouterCoursAUnEleve:
         cours = self.cours_repository.recuperer_cours_par_id(cours_id)
         if eleve and cours:
             eleve_cours = eleve.cours
-            eleve_cours.extend(cours)
+            eleve_cours.append(cours)   
             return eleve_cours
