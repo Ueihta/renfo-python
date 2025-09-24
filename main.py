@@ -12,4 +12,5 @@ if __name__ == "__main__":
     print(eleves)
 
     usecase = AjouterCoursAUnEleve()
-    usecase.executer(1, 2)
+    cours = usecase.executer(1, 2)
+    print(cours)
